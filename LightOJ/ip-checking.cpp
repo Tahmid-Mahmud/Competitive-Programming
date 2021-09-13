@@ -64,10 +64,14 @@ int main(){
 	}
 }
 
-/*
+/* Test Case
 2
 192.168.0.100
 11000000.10101000.00000000.11001000
 65.254.63.122
 01000001.11111110.00111111.01111010
 */
+
+
+// Flow Chart
+// Real ip => Segment digits(a,b,c,d) => binary_conversion(a,b,c,d) => String('.' and digits) => Reverse(GetrealBinIP) => make(8 digit) => Return
