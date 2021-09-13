@@ -1,0 +1,11 @@
+1. Fundamental Ideas(C++)
+
+2. Time complexity
+
+3. STL (vector, stack, ...)
+
+4. Graph Theory: BFS, DFS, Tree, Shortest Path
+
+5. Modular Arithmetic, Combinatotics.
+
+6. Dynamic Programming
