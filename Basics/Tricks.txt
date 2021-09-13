@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 
-This file only works in C++ 11  (g++ 7.5.0)
+//This file only works in C++ 11  (g++ 7.5.0)
+
+
 
 #include<bits/stdc++.h>      //Takes much time for compilation but not for execution
 => #include<iostream>
@@ -10,4 +12,9 @@ This file only works in C++ 11  (g++ 7.5.0)
 => #include<list>
 => #include<stack>
 => #include<set>
+=> #include<iterator>
+=> #include<queue>
+=> #include<memory>
+=> #include<map>
 => #include<...>
+
