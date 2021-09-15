@@ -1,8 +1,4 @@
 #include<bits/stdc++.h>
-//#include<iostream>
-//#include<vector>
-//#include<algorithm>
-
 using namespace std;
 
 int main(){
@@ -53,3 +49,9 @@ int main(){
 	}
 	return 0;
 }
+
+/*
+This getline helps to take string input with spaces
+but the fisrt input will be automatically empty
+so try to take 1 more turn to match opeation number 'm'
+*/
