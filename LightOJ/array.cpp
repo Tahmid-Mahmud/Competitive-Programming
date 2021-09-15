@@ -42,10 +42,15 @@ int main(){
 			    reverse(a.begin(), a.end());
 			
 		}
-		printf("Case %d: ", i);
-		for(int q:a){
-			cout<<q<<" ";
-		}cout<<endl;
+		printf("Case %ld:\n",i);
+		for(int q=0; q<a.size(); q++){
+		    if(q==0)
+			cout<<a[q];
+		    else
+			cout<<" "<<a[q];
+		}
+		cout<<endl;
+		}
 	}
 	return 0;
 }
