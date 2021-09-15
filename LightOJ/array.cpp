@@ -22,17 +22,20 @@ int main(){
 //			cout<<"CMD: "<<oper<<endl;
 			if(oper[0]=='S')
 			    for(int l=0; l<a.size(); l++){
-			    	a[l]+=oper[2]-'0';
+                    int z=stoi(oper.substr(2, oper.size()-2));
+			    	a[l]+=z;
 			    }
 			
 			if(oper[0]=='M')
 			    for(int l=0; l<a.size(); l++){
-			    	a[l]*=oper[2]-'0';
+                    int z=stoi(oper.substr(2, oper.size()-2));
+			    	a[l]*=z;
 			    }
 			    
 			if(oper[0]=='D')
 			    for(int l=0; l<a.size(); l++){
-			    	a[l]/=oper[2]-'0';
+                    int z=stoi(oper.substr(2, oper.size()-2));
+			    	a[l]/=z;
 			    }
 			    
 			if(oper[0]=='P')
@@ -43,14 +46,13 @@ int main(){
 			
 		}
 		printf("Case %ld:\n",i);
-		for(int q=0; q<a.size(); q++){
-		    if(q==0)
-			cout<<a[q];
-		    else
-			cout<<" "<<a[q];
-		}
-		cout<<endl;
-		}
+        for(int q=0; q<a.size(); q++){
+            if(q==0)
+                cout<<a[q];
+            else
+                cout<<" "<<a[q];
+        }
+        cout<<endl;
 	}
 	return 0;
 }
