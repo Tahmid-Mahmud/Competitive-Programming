@@ -1,5 +1,6 @@
-#include<iostream>
-#include<deque>
+#include<bits/stdc++.h>
+//#include<iostream>
+//#include<deque>
 
 using namespace std;
 
