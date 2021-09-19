@@ -14,38 +14,49 @@ int main(){
 			a.push_back(temp);
 		}
 		
-		for(int k=0; k<=m; k++){
-			string oper;
-			//cin.ignore();
-			getline(cin, oper);
+		for(int k=0; k<m; k++){
+			char oper;
+			cin>>oper;
+//			cin.ignore();
+//			getline(cin, oper);
 //			cout<<"Turn no: "<<k<<endl;
 //			cout<<"CMD: "<<oper<<endl;
-			if(oper[0]=='S')
+			if(oper=='S'){
+				int D;
+				cin>>D;
 			    for(int l=0; l<a.size(); l++){
-                    int z=stoi(oper.substr(2, oper.size()-2));
-			    	a[l]+=z;
+			    	a[l]+=D;
 			    }
+			}
 			
-			if(oper[0]=='M')
+			if(oper=='M'){
+				int D;
+				cin>>D;
 			    for(int l=0; l<a.size(); l++){
-                    int z=stoi(oper.substr(2, oper.size()-2));
-			    	a[l]*=z;
+			    	a[l]*=D;
 			    }
-			    
-			if(oper[0]=='D')
+			}
+
+			if(oper=='D'){
+				int K;
+				cin>>K;
 			    for(int l=0; l<a.size(); l++){
-                    int z=stoi(oper.substr(2, oper.size()-2));
-			    	a[l]/=z;
+			    	a[l]/=K;
 			    }
+			}
+
+			if(oper=='P'){
+				int w, f;
+				cin>>w>>f;
+			    swap(a[w], a[f]);
+			}
 			    
-			if(oper[0]=='P')
-			    swap(a[oper[2]-'0'], a[oper[4]-'0']);
-			    
-			if(oper[0]=='R')
+			if(oper=='R'){
 			    reverse(a.begin(), a.end());
-			
+			}
+
 		}
-		printf("Case %ld:\n",i);
+		printf("Case %d:\n",i);
         for(int q=0; q<a.size(); q++){
             if(q==0)
                 cout<<a[q];
