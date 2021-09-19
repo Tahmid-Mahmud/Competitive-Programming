@@ -7,11 +7,11 @@ using namespace std;
 int main(){
 	int t;
 	cin>>t;
-	for(int i=0; i<t; i++){
+	for(int i=1; i<=t; i++){
 		deque<int> a;
 		int n, m;
 		cin>>n>>m;
-		printf("Case %d:", i);
+		printf("Case %d:\n", i);
 		for(int j=0; j<m; j++){
 			string cmd, cmd2;
 			int num;
@@ -28,11 +28,11 @@ int main(){
 				//cout<<suff<<endl;
 				if(a.size()<n){
 					if(suff=="Left"){
-						cout<<"Pushed in "<<suff<<": "<<num<<endl;
+						cout<<"Pushed in left: "<<num<<endl;
 						a.push_front(num);
 					}
 					else{
-						cout<<"Pushed in "<<suff<<": "<<num<<endl;
+						cout<<"Pushed in right: "<<num<<endl;
 						a.push_back(num);
 					}
 				}
@@ -45,11 +45,11 @@ int main(){
 				string suff=cmd.substr(3, cmd.size()-3);
 				if(a.size()>0){
 					if(suff=="Left"){
-						cout<<"Popped from "<<suff<<": "<<a[0]<<endl;
+						cout<<"Popped from left: "<<a[0]<<endl;
 						a.pop_front();
 					}
 					else{
-						cout<<"Popped from "<<suff<<": "<<a[a.size()-1]<<endl;
+						cout<<"Popped from right: "<<a[a.size()-1]<<endl;
 						a.pop_back();
 					}
 				}
