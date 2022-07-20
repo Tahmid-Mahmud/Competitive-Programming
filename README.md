@@ -1,2 +1,2 @@
 # Competitive-Programming
-All the theories and code examples
+A small initiative of competitive programming by the name of almighty Allah.
