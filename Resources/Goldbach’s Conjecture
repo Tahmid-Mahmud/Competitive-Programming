@@ -1,0 +1,54 @@
+Goldbach's Conjecture is one of the oldest unsolved problems in number theory.
+
+It says:
+
+"Every even integer greater than 2 can be expressed as the sum of two prime numbers."
+
+✨ Examples:
+4 = 2 + 2
+
+6 = 3 + 3
+
+8 = 3 + 5
+
+10 = 5 + 5 or 3 + 7
+
+28 = 11 + 17 or 5 + 23
+
+This has been tested for trillions of even numbers, and no counterexample has ever been found — but no one has proved it formally yet, so it’s still a conjecture, not a theorem.
+
+🤔 Is There a Version for Odd Numbers?
+Yes — an extended version often used in programming problems:
+
+Any integer n ≥ 5 can be expressed as the sum of 3 prime numbers.
+
+This is useful because:
+
+If n is even and ≥ 4, Goldbach's conjecture (2 primes)
+
+If n is odd and ≥ 5, you can write:
+n = 3 + (n - 3) → If n - 3 is even and ≥ 2, then it's the sum of two primes → total 3 primes
+
+✅ Why It's Useful in Your Problem
+In your toy coin problem:
+
+You have infinite coins of any prime value.
+
+So if n ≥ 2, you can always pay the exact amount using primes:
+
+If n is a prime → pay with that single coin.
+
+If not:
+
+Even n ≥ 4 → sum of 2 primes
+
+Odd n ≥ 5 → sum of 3 primes (like 3 + sum of 2 primes)
+
+Only n = 1 is impossible — there's no way to reach 1 using any combination of primes.
+
+📌 Summary
+n	Can be formed with primes?	Reason
+1	❌ No	No primes add to 1
+2, 3	✅ Yes	Prime itself
+≥ 4	✅ Yes	Goldbach / Extended Goldbach Conjecture
+
